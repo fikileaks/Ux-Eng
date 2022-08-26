@@ -1,0 +1,31 @@
+.footer {
+  background-color: var(--grey);
+  border: 1px solid red;
+}
+
+.footer__text {
+  text-align: justify;
+  text-justify: inter-word;
+  margin-top: 2.625rem;
+}
+
+.footer__button {
+  display: block;
+  margin-inline: auto;
+  font-weight: bold;
+  color: var(--blue);
+  text-align: center;
+  border: none;
+  border: 1px solid red;
+  background-color: transparent;
+}
+
+.footer__flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__brand {
+  text-align: center;
+}

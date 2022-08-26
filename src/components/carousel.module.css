@@ -1,0 +1,144 @@
+.slider {
+  /* border: 7px solid var(--green); */
+  position: relative;
+  overflow-x: hidden;
+  width: auto;
+}
+.slider__cards {
+  /* color: green; */
+  display: inline-flex;
+  /* justify-content: flex-start; */
+  align-items: center;
+  /* overflow: hidden; */
+  /* border: 3px solid blue; */
+  width: fit-content;
+  gap: 12px;
+  /* transform: translateX(-200px) */
+}
+
+.slider__card {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  flex-shrink: 0;
+  width: 132px;
+  background-color: var(--white);
+  justify-content: center;
+  align-items: center;
+  box-shadow: var(--shadow);
+}
+
+/* CARD */
+.card__img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.card__content {
+  padding: 0.5rem;
+}
+.card__text {
+  color: var(--black);
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+.card__price {
+  color: var(--orange);
+  font-weight: bold;
+  font-size: 1rem;
+}
+.card__tag {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+.card__disc {
+  color: var(--black);
+  opacity: 0.6;
+  font-size: 0.75rem;
+  text-decoration: line-through;
+}
+.card__chip {
+  background-color: var(--chip);
+  color: var(--chiptext);
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding-inline: 0.25rem;
+  width: fit-content;
+  text-align: center;
+  border-radius: 999px;
+}
+.card__button {
+  width: 100%;
+  font-size: 0.875rem;
+  border: none;
+  background-color: var(--blue);
+  color: var(--white);
+  padding-block: 0.5rem;
+  margin-top: 0.5rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+}
+/* CARD */
+
+.slider__next,
+.slider__prev {
+  position: absolute;
+  z-index: 1;
+  width: 20px;
+  height: 20px;
+  background-color: hotpink;
+  padding: 0.5rem;
+  border-radius: 999px;
+  box-shadow: var(--shadow);
+  background-color: white;
+  /* stroke: white; */
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.next__button,
+.prev__button {
+  /* background-color: red; */
+  width: 24px;
+  height: 24px;
+}
+
+.slider__next {
+  top: 50%;
+  left: 0;
+  transform: translate(0, -50%);
+}
+
+.slider__prev {
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+}
+
+.test {
+  border: 1px solid red;
+  width: 100px;
+}
+
+.lebar {
+  width: 200px;
+  border: 1px solid red;
+}
+
+.xx {
+  background-color: #ddd;
+  font-size: 2rem;
+  /* width: 100px; */
+}
+
+.all {
+  border: 3px solid orange;
+  background-color: orange;
+  width: 100%;
+}

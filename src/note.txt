@@ -1,0 +1,45 @@
+
+  /* 
+ ? Array = data bisa 10, 20, 30, 40, 50, 60
+ ! per width = 100px
+ ! per totalWidthPure = 10 x 100px
+ ! per totalWidthWithGap = (10 x 100px) + (9 x 3px)
+ gap : 3
+ length -1 
+ ! also calculate gap = 3 x 9 = 27px
+ pembulatan angka
+
+ klik kanan 1x
+ transformX misal 25px
+
+ * index = (0state +  25px/100px ).floor //dibulatin ke bawahhhhhh
+
+ *kalo 0 hidden yang button left
+ *kalo === state.length , button rigth hidden
+  */
+
+  /* 
+ SUPAYA DAPET ANGKA 10, APA YANG HARUS DILAKUKAN???
+ GESER/WIDTH
+
+ CARI BERAPA KALI KLIK SAMPE DAPET ANGKA 10
+ ! per 1 geser -> 30px
+ ! komponen width random -> 1000,2000
+ ! lebar card -> 140px, 180px
+ * 1 index = berapa kali geser ?
+ * 1 index = 30px / 140px = misal 0.1234 %  
+ * kalo 0.1234 === 0 {
+ * hide tombol yang kiri
+ * }
+ * kalo 0.1234 === arrayData.length {
+ * hide tombol yang kiri
+ * }
+
+ TODO : PARAMETERNYA ITU HARUS 100% atau lebih agar fullfiled the term condition
+ TODO : geser 30px ituuu berapa persen dari 100% ??? 
+ TODO : si box luar - si box inner = 100% state !!! 
+ */
+
+  /* -------COBA PAKE USEREF----- */
+  // const referensi = useRef(null);
+  // const referensibaru = useRef(0);

@@ -1,65 +1,78 @@
-.slider {
-  border: 7px solid red;
-  position: relative;
-  overflow-x: hidden;
-}
-.slider__cards {
-  color: green;
-  display: inline-flex;
-  /* justify-content: flex-start; */
-  align-items: center;
-  /* overflow: hidden; */
-  border: 3px solid blue;
-  width: fit-content;
-  gap: 12px;
-  /* transform: translateX(-200px) */
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1rem;
+  margin-block: 1rem;
 }
 
-.slider__card {
+.box1,
+.box2,
+.box3,
+.box4 {
   display: flex;
-  border: 2px solid orange;
-  flex-shrink: 0;
-  width: 200px;
-  height: 100px;
-  background-color: #ddd;
-  color: orange;
   justify-content: center;
   align-items: center;
+  height: 23.4rem;
+  font-size: 8rem;
 }
 
-.slider__next,
-.slider__prev {
-  position: fixed;
-  z-index: 1;
-  width: 20px;
-  height: 20px;
-  background-color: hotpink;
+.box4 {
+  background-color: var(--peach);
+  flex: 1 1 100%;
+}
+.box3 {
+  background-color: var(--violet);
+  flex: 1 1 100%;
+}
+.carousel {
+  /* flex: 0 1 100%; */
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: 1;
+  width: 100%;
+}
+.box1 {
+  background-color: var(--green);
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: calc(50% - 0.5rem);
+}
+.box2 {
+  background-color: var(--cyan);
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: calc(50% - 0.5rem);
 }
 
-.slider__next {
-  top: 50%;
-  left: 0;
-  transform: translate(0, -50%);
+.footer {
+  flex: 1 1 100%;
+  background-color: yellow;
 }
 
-.slider__prev {
-  top: 50%;
-  right: 0;
-  transform: translate(0, -50%);
-}
-
-.test {
-  border: 1px solid red;
-  width: 100px;
-}
-
-.lebar {
-  width: 200px;
-  border: 1px solid red;
-}
-
-.xx {
-  background-color: #ddd;
-  font-size: 2rem;
-  /* width: 100px; */
+/* -----------------------MEDIA MEDIA MEDIA ----------------------- */
+@media screen and (min-width: 768px) {
+  .container {
+    gap: 1.75rem;
+    margin-block: 1.75rem;
+  }
+  .box1 {
+    order: 1;
+    flex-basis: calc(50% - 0.875rem);
+  }
+  .box2 {
+    order: 2;
+    flex-basis: calc(50% - 0.875rem);
+  }
+  .box3 {
+    order: 3;
+  }
+  .box4 {
+    order: 4;
+  }
+  .carousel {
+    order: 5;
+  }
+  .footer {
+    order: 6;
+  }
 }
