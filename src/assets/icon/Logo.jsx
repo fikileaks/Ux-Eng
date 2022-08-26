@@ -25,7 +25,7 @@ export const Blibli = ({ className }) => {
 export const RightArrow = ({ className }) => {
   return (
     <svg className={className} width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M9.34668 18.6196L15.3467 12.6196L9.34668 6.61963" stroke="#0095DA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M9.34668 18.6196L15.3467 12.6196L9.34668 6.61963" stroke="#0095DA" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
 };
@@ -33,15 +33,55 @@ export const RightArrow = ({ className }) => {
 export const LeftArrow = ({ className }) => {
   return (
     <svg className={className} width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M15 18L9 12L15 6" stroke="#0095DA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M15 18L9 12L15 6" stroke="#0095DA" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
 };
 
 export const UpArrow = ({ className }) => {
   return (
-    <svg className={className} width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M18.3467 15.6196L12.3467 9.61963L6.34668 15.6196" stroke="#0095DA" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+    <svg className={className} xmlns="http://www.w3.org/2000/svg" width="24" height="24" transform="rotate(180)" viewBox="0 0 24 24" fill="none">
+      <path
+        d="M12.1541 16.0001C11.5181 16.0001 10.9351 15.7081 10.5541 15.2001L7.19205 10.5891C6.86705 10.1431 6.96405 9.51714 7.41105 9.19214C7.85705 8.86714 8.48305 8.96514 8.80805 9.41114L12.1621 14.0111L15.166 9.44814C15.4711 8.98814 16.0911 8.86114 16.5521 9.16614C17.0121 9.47114 17.1381 10.0921 16.8341 10.5521L13.7881 15.1521C13.3721 15.7091 12.7891 16.0001 12.1541 16.0001Z"
+        fill="#858585"
+      />
+      <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="7" y="9" width="10" height="8">
+        <path
+          d="M12.1541 16.0001C11.5181 16.0001 10.9351 15.7081 10.5541 15.2001L7.19205 10.5891C6.86705 10.1431 6.96405 9.51714 7.41105 9.19214C7.85705 8.86714 8.48305 8.96514 8.80805 9.41114L12.1621 14.0111L15.166 9.44814C15.4711 8.98814 16.0911 8.86114 16.5521 9.16614C17.0121 9.47114 17.1381 10.0921 16.8341 10.5521L13.7881 15.1521C13.3721 15.7091 12.7891 16.0001 12.1541 16.0001Z"
+          fill="white"
+        />
+      </mask>
+      <g mask="url(#mask0)">
+        <rect width="24" height="24" fill="#0095DA" />
+      </g>
+    </svg>
+  );
+};
+
+export const DownArrow = ({ className }) => {
+  return (
+    <svg className={className} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <path
+        d="M12.1541 16.0001C11.5181 16.0001 10.9351 15.7081 10.5541 15.2001L7.19205 10.5891C6.86705 10.1431 6.96405 9.51714 7.41105 9.19214C7.85705 8.86714 8.48305 8.96514 8.80805 9.41114L12.1621 14.0111L15.166 9.44814C15.4711 8.98814 16.0911 8.86114 16.5521 9.16614C17.0121 9.47114 17.1381 10.0921 16.8341 10.5521L13.7881 15.1521C13.3721 15.7091 12.7891 16.0001 12.1541 16.0001Z"
+        fill="#858585"
+      />
+      <mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="7" y="9" width="10" height="8">
+        <path
+          d="M12.1541 16.0001C11.5181 16.0001 10.9351 15.7081 10.5541 15.2001L7.19205 10.5891C6.86705 10.1431 6.96405 9.51714 7.41105 9.19214C7.85705 8.86714 8.48305 8.96514 8.80805 9.41114L12.1621 14.0111L15.166 9.44814C15.4711 8.98814 16.0911 8.86114 16.5521 9.16614C17.0121 9.47114 17.1381 10.0921 16.8341 10.5521L13.7881 15.1521C13.3721 15.7091 12.7891 16.0001 12.1541 16.0001Z"
+          fill="white"
+        />
+      </mask>
+      <g mask="url(#mask0)">
+        <rect width="24" height="24" fill="#0095DA" />
+      </g>
+    </svg>
+  );
+};
+
+export const ToTop = ({ className }) => {
+  return (
+    <svg className={className} width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M20.5 5.5V35M14 14.6001L19.6497 5.47365C20.0407 4.84212 20.9593 4.84212 21.3503 5.47365L27 14.6001" stroke="#0095DA" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
     </svg>
   );
 };

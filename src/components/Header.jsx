@@ -1,11 +1,11 @@
 import { Blibli } from '../assets/icon/Logo';
 import styles from './header.module.css';
 
-const Header = () => {
+const Header = ({ forwardRef }) => {
   return (
-    <div className={styles.header}>
+    <header ref={forwardRef} className={styles.header}>
       <Blibli className={`${styles.header__icon} wrap`} />
-    </div>
+    </header>
   );
 };
 

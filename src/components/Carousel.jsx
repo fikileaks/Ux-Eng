@@ -83,13 +83,13 @@ const Carousel = () => {
         )}
         <div className={styles.slider__cards} style={{ transform: `translateX(${slideIndex}px)` }} ref={innerSlideRef}>
           {data.map((item, index) => (
-            // <div ref={cardSlideRef} className={styles.slider__card} key={index}>
-            //   {item}
-            // </div>
             <div ref={cardSlideRef} className={styles.slider__card} key={index}>
+              {/*               <div ref={cardSlideRef} className={styles.slider__card} key={index}>
+                {item}
+              </div> */}
               <div className={styles.card__img} style={{ backgroundImage: `url(${shoe})` }}></div>
               <div className={styles.card__content}>
-                <p className={styles.card__text}>NIKE AIR Lorem ipsum dolor sit amet consectetur.</p>
+                <p className={styles.card__text}>NIKE AIR Lorem ipsum dolor sit amet consectetur adipisicing elit. Est.</p>
                 <p className={styles.card__price}>Rp.3550.000</p>
                 <div className={styles.card__tag}>
                   <p className={styles.card__disc}>Rp.1.000.000</p>

@@ -1,19 +1,13 @@
 .slider {
-  /* border: 7px solid var(--green); */
   position: relative;
   overflow-x: hidden;
   width: auto;
 }
 .slider__cards {
-  /* color: green; */
   display: inline-flex;
-  /* justify-content: flex-start; */
   align-items: center;
-  /* overflow: hidden; */
-  /* border: 3px solid blue; */
   width: fit-content;
   gap: 12px;
-  /* transform: translateX(-200px) */
 }
 
 .slider__card {
@@ -27,6 +21,17 @@
   justify-content: center;
   align-items: center;
   box-shadow: var(--shadow);
+  margin-block: 0.5rem;
+  -webkit-transition: all 0.1s ease-in-out;
+}
+.slider__card:hover {
+  box-shadow: var(--shadow-hover);
+  transform: scale(1.03);
+  transition: all 0.1s ease-in-out;
+}
+.slider__card:active {
+  transform: scale(0.98);
+  transition: all 0.1s ease-in-out;
 }
 
 /* CARD */
@@ -44,6 +49,10 @@
   color: var(--black);
   font-size: 0.875rem;
   font-weight: bold;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
 }
 .card__price {
   color: var(--orange);
@@ -81,6 +90,11 @@
   margin-top: 0.5rem;
   border-radius: 0.5rem;
   font-weight: bold;
+  cursor: pointer;
+}
+.card__button:hover {
+  background-color: var(--blue-hover);
+  transition: all 0.1s ease-in-out;
 }
 /* CARD */
 
@@ -88,25 +102,24 @@
 .slider__prev {
   position: absolute;
   z-index: 1;
-  width: 20px;
-  height: 20px;
-  background-color: hotpink;
   padding: 0.5rem;
   border-radius: 999px;
   box-shadow: var(--shadow);
   background-color: white;
-  /* stroke: white; */
-  width: 24px;
-  height: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .next__button,
 .prev__button {
-  /* background-color: red; */
-  width: 24px;
-  height: 24px;
+  width: 1.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+}
+.slider__next:hover,
+.slider__prev:hover {
+  box-shadow: var(--shadow-hover);
+  transition: all 0.1s ease-in-out;
 }
 
 .slider__next {
@@ -121,24 +134,8 @@
   transform: translate(0, -50%);
 }
 
-.test {
-  border: 1px solid red;
-  width: 100px;
-}
-
-.lebar {
-  width: 200px;
-  border: 1px solid red;
-}
-
-.xx {
-  background-color: #ddd;
-  font-size: 2rem;
-  /* width: 100px; */
-}
-
-.all {
-  border: 3px solid orange;
-  background-color: orange;
-  width: 100%;
+@media screen and (min-width: 1280px) {
+  .slider__card {
+    width: 11.375rem;
+  }
 }

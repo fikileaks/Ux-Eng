@@ -1,12 +1,13 @@
 .footer {
   background-color: var(--grey);
-  border: 1px solid red;
+  position: relative;
 }
 
 .footer__text {
   text-align: justify;
   text-justify: inter-word;
-  margin-top: 2.625rem;
+  padding-top: 2.625rem;
+  padding-bottom: 1.5rem;
 }
 
 .footer__button {
@@ -16,16 +17,40 @@
   color: var(--blue);
   text-align: center;
   border: none;
-  border: 1px solid red;
   background-color: transparent;
+  cursor: pointer;
+}
+.footer__button:hover {
+  color: var(--blue-hover);
+  transition: all 0.1s ease-in-out;
+}
+.footer__buttondown {
+  padding-top: 2.625rem;
 }
 
 .footer__flex {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  gap: 0.75rem;
 }
 
 .footer__brand {
   text-align: center;
+  padding-bottom: 1.5rem;
+}
+
+.footer__totop__button {
+  display: block;
+  margin-left: auto;
+  padding: 0.375rem;
+  background-color: var(--white);
+  border-radius: 999px;
+  box-shadow: var(--shadow);
+  border: none;
+  cursor: pointer;
+}
+.footer__totop__button:hover {
+  box-shadow: var(--shadow-hover);
+  transition: all 0.1s ease-in-out;
 }
