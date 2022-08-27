@@ -81,7 +81,7 @@ export const DownArrow = ({ className }) => {
 export const ToTop = ({ className }) => {
   return (
     <svg className={className} width="41" height="40" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M20.5 5.5V35M14 14.6001L19.6497 5.47365C20.0407 4.84212 20.9593 4.84212 21.3503 5.47365L27 14.6001" stroke="#0095DA" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" />
+      <path d="M20.5 5.5V35M14 14.6001L19.6497 5.47365C20.0407 4.84212 20.9593 4.84212 21.3503 5.47365L27 14.6001" stroke="#0095DA" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round" />
     </svg>
   );
 };

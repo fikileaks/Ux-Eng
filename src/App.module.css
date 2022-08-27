@@ -26,7 +26,6 @@
   flex: 1 1 100%;
 }
 .carousel {
-  /* flex: 0 1 100%; */
   flex-grow: 0;
   flex-shrink: 1;
   flex-basis: 1;
@@ -50,7 +49,6 @@
   background-color: yellow;
 }
 
-/* -----------------------MEDIA MEDIA MEDIA ----------------------- */
 @media screen and (min-width: 1280px) {
   .container {
     gap: 1.75rem;

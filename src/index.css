@@ -6,7 +6,6 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: effra, sans-serif;
-  /* font-family: 'Open Sans', sans-serif; */
 }
 
 :root {
@@ -25,7 +24,6 @@ body {
   --orange: #f37021;
   --grey: #d9d9d9;
   --white: #ffffff;
-  /* Box Height Variable */
   --box: 20.5rem;
   --shadow: 0px 0px 2px rgba(40, 41, 61, 0.04), 0px 4px 8px rgba(96, 97, 112, 0.16);
   --shadow-hover: 0px 2px 8px rgba(40, 41, 61, 0.04), 0px 16px 24px rgba(96, 97, 112, 0.16);

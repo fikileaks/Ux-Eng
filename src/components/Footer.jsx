@@ -2,13 +2,6 @@ import { forwardRef, useState } from 'react';
 import { DownArrow, ToTop, UpArrow } from '../assets/icon/Logo';
 import styles from './footer.module.css';
 const Footer = ({ scrollTo, forwardRef }) => {
-  const scrollTo2 = (x) => {
-    window.scrollTo({
-      top: x.offsetTop,
-      left: 0,
-      behavior: 'smooth',
-    });
-  };
   const [show, setShow] = useState(true);
   const toggleFooter = () => {
     setShow(!show);
